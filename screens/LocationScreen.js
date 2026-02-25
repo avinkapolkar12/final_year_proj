@@ -1,6 +1,6 @@
-import { View, StyleSheet, Text } from 'react-native';
+import { View, Text } from 'react-native';
 import { WebView } from 'react-native-webview';
-import { Colors } from '../constants/colors';
+import styles from '../styles/screens/LocationScreenStyles';
 
 export default function LocationScreen() {
   const leafletHTML = `
@@ -59,38 +59,3 @@ export default function LocationScreen() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.background,
-  },
-
-  mapContainer: {
-    flex: 1, // 50%
-  },
-
-  map: {
-    flex: 1,
-  },
-
-  infoPanel: {
-    flex: 1, // 50%
-    padding: 20,
-    borderTopWidth: 1,
-    borderColor: Colors.border,
-  },
-
-  title: {
-    fontSize: 18,
-    fontWeight: '700',
-    marginBottom: 10,
-    color: Colors.text,
-  },
-
-  text: {
-    fontSize: 14,
-    color: Colors.muted,
-    marginBottom: 6,
-  },
-});

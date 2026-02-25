@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet, Switch } from 'react-native';
-import { Colors } from '../constants/colors';
+import { View, Text, Switch } from 'react-native';
+import styles from '../styles/screens/SettingsScreenStyles';
 
 export default function SettingsScreen() {
   return (
@@ -26,28 +26,3 @@ export default function SettingsScreen() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: Colors.background, padding: 16 },
-
-  card: {
-    backgroundColor: '#fff',
-    borderRadius: 14,
-    padding: 14,
-    marginBottom: 16,
-    borderWidth: 1,
-    borderColor: Colors.border,
-  },
-
-  item: {
-    fontSize: 14,
-    paddingVertical: 10,
-    color: Colors.text,
-  },
-
-  row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-});

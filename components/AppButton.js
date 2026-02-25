@@ -1,5 +1,5 @@
-import { Pressable, Text, StyleSheet } from 'react-native';
-import { Colors } from '../constants/colors';
+import { Pressable, Text } from 'react-native';
+import styles from '../styles/components/AppButtonStyles';
 
 export default function AppButton({ title, onPress }) {
   return (
@@ -8,18 +8,3 @@ export default function AppButton({ title, onPress }) {
     </Pressable>
   );
 }
-
-const styles = StyleSheet.create({
-  button: {
-    backgroundColor: Colors.primary,
-    paddingVertical: 14,
-    borderRadius: 14,
-    alignItems: 'center',
-    marginTop: 16,
-  },
-  text: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: '600',
-  },
-});

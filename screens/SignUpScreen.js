@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
 import AppInput from '../components/AppInput';
 import AppButton from '../components/AppButton';
-import { Colors } from '../constants/colors';
+import styles from '../styles/screens/SignUpScreenStyles';
 
 export default function SignUpScreen({ navigation }) {
   return (
@@ -22,27 +22,3 @@ export default function SignUpScreen({ navigation }) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.background,
-    padding: 24,
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: '700',
-    marginBottom: 24,
-    color: Colors.text,
-  },
-  link: {
-    marginTop: 20,
-    textAlign: 'center',
-    color: Colors.muted,
-  },
-  linkBold: {
-    color: Colors.primary,
-    fontWeight: '600',
-  },
-});
